@@ -18655,6 +18655,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Reps\\ArquiteturaSoftware\\BiblioTech\\Views\\Genero\\Edit.cshtml",
+      "TargetPath": "Views\\Genero\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Reps\\ArquiteturaSoftware\\BiblioTech\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
@@ -18662,6 +18667,16 @@
     {
       "FilePath": "d:\\Reps\\ArquiteturaSoftware\\BiblioTech\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Reps\\ArquiteturaSoftware\\BiblioTech\\Views\\Genero\\Delete.cshtml",
+      "TargetPath": "Views\\Genero\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Reps\\ArquiteturaSoftware\\BiblioTech\\Views\\Livro\\Details.cshtml",
+      "TargetPath": "Views\\Livro\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -18675,8 +18690,68 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Reps\\ArquiteturaSoftware\\BiblioTech\\Views\\Genero\\Index.cshtml",
+      "TargetPath": "Views\\Genero\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Reps\\ArquiteturaSoftware\\BiblioTech\\Views\\Autor\\Details.cshtml",
+      "TargetPath": "Views\\Autor\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Reps\\ArquiteturaSoftware\\BiblioTech\\Views\\Livro\\Create.cshtml",
+      "TargetPath": "Views\\Livro\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Reps\\ArquiteturaSoftware\\BiblioTech\\Views\\Livro\\Delete.cshtml",
+      "TargetPath": "Views\\Livro\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Reps\\ArquiteturaSoftware\\BiblioTech\\Views\\Genero\\Create.cshtml",
+      "TargetPath": "Views\\Genero\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Reps\\ArquiteturaSoftware\\BiblioTech\\Views\\Livro\\Index.cshtml",
+      "TargetPath": "Views\\Livro\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Reps\\ArquiteturaSoftware\\BiblioTech\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Reps\\ArquiteturaSoftware\\BiblioTech\\Views\\Autor\\Edit.cshtml",
+      "TargetPath": "Views\\Autor\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Reps\\ArquiteturaSoftware\\BiblioTech\\Views\\Autor\\Delete.cshtml",
+      "TargetPath": "Views\\Autor\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Reps\\ArquiteturaSoftware\\BiblioTech\\Views\\Autor\\Create.cshtml",
+      "TargetPath": "Views\\Autor\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Reps\\ArquiteturaSoftware\\BiblioTech\\Views\\Genero\\Details.cshtml",
+      "TargetPath": "Views\\Genero\\Details.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Reps\\ArquiteturaSoftware\\BiblioTech\\Views\\Livro\\Edit.cshtml",
+      "TargetPath": "Views\\Livro\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Reps\\ArquiteturaSoftware\\BiblioTech\\Views\\Autor\\Index.cshtml",
+      "TargetPath": "Views\\Autor\\Index.cshtml",
       "FileKind": "mvc"
     }
   ],

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\Reps\\ArquiteturaSoftware\\BiblioTech\\BiblioTech.csproj": {}
+    "D:\\Reps\\ArquiteturaSoftware\\BiblioTech\\BiblioTech.csproj": {}
   },
   "projects": {
-    "d:\\Reps\\ArquiteturaSoftware\\BiblioTech\\BiblioTech.csproj": {
+    "D:\\Reps\\ArquiteturaSoftware\\BiblioTech\\BiblioTech.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\Reps\\ArquiteturaSoftware\\BiblioTech\\BiblioTech.csproj",
+        "projectUniqueName": "D:\\Reps\\ArquiteturaSoftware\\BiblioTech\\BiblioTech.csproj",
         "projectName": "BiblioTech",
-        "projectPath": "d:\\Reps\\ArquiteturaSoftware\\BiblioTech\\BiblioTech.csproj",
+        "projectPath": "D:\\Reps\\ArquiteturaSoftware\\BiblioTech\\BiblioTech.csproj",
         "packagesPath": "C:\\Users\\joaor\\.nuget\\packages\\",
-        "outputPath": "d:\\Reps\\ArquiteturaSoftware\\BiblioTech\\obj\\",
+        "outputPath": "D:\\Reps\\ArquiteturaSoftware\\BiblioTech\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\joaor\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,9 +38,33 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.5, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[7.0.6, )"
+            },
+            "MySql.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
             "MySqlConnector": {
               "target": "Package",
-              "version": "[2.2.6, )"
+              "version": "[2.2.0, )"
             }
           },
           "imports": [
