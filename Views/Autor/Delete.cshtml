@@ -1,7 +1,8 @@
 @model BiblioTech.Models.Autor
 
 @{
-    Layout = null;
+        ViewData["Title"] = "Autor";
+
 }
 
 <!DOCTYPE html>
@@ -9,17 +10,17 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Delete</title>
+    <title>Deletar autor</title>
 </head>
 <body>
 
-<h3>Are you sure you want to delete this?</h3>
+<h3>Tem certeza que gostaria de apagar esse autor?</h3>
 <div>
     <h4>Autor</h4>
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.NomeAutor)
+            Nome do autor
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.NomeAutor)
@@ -29,7 +30,7 @@
     <form asp-action="Delete">
         <input type="hidden" asp-for="IdAutor" />
         <input type="submit" value="Delete" class="btn btn-danger" /> |
-        <a asp-action="Index">Back to List</a>
+        <a asp-action="Index">Voltar</a>
     </form>
 </div>
 </body>

@@ -1,7 +1,7 @@
 @model BiblioTech.Models.Livro
 
 @{
-    Layout = null;
+    ViewData["Title"] = "Livro";
 }
 
 <!DOCTYPE html>
@@ -9,7 +9,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Edit</title>
+    <title>Edição de livro</title>
 </head>
 <body>
 
@@ -21,24 +21,22 @@
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="IdLivo" />
             <div class="form-group">
-                <label asp-for="NomeLivro" class="control-label"></label>
+                <label for="NomeLivro" class="control-label">Nome do livro</label>
                 <input asp-for="NomeLivro" class="form-control" />
                 <span asp-validation-for="NomeLivro" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="IdGenero" class="control-label"></label>
-                <input asp-for="IdGenero" class="form-control" />
-                <span asp-validation-for="IdGenero" class="text-danger"></span>
+                <label for="IdGenero">Genero</label>
+                    @Html.DropDownList("IdGenero", ViewBag.Genero as SelectList, "-- Selecione --", new { @class = "form-control" })
             </div>
             <div class="form-group">
-                <label asp-for="QuantidadePaginas" class="control-label"></label>
+                <label asp-for="QuantidadePaginas" class="control-label">Quantidade de páginas</label>
                 <input asp-for="QuantidadePaginas" class="form-control" />
                 <span asp-validation-for="QuantidadePaginas" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="IdAutor" class="control-label"></label>
-                <input asp-for="IdAutor" class="form-control" />
-                <span asp-validation-for="IdAutor" class="text-danger"></span>
+                <label for="IdAutor">Autor</label>
+                    @Html.DropDownList("IdAutor", ViewBag.Autor as SelectList, "-- Selecione --", new { @class = "form-control" })
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />

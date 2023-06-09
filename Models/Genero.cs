@@ -9,7 +9,7 @@ namespace BiblioTech.Models
     public class Genero
     {
         [Key]
-        public int IdAutor { get; set; }
+        public int IdGenero { get; set; }
         public String DescricaoGenero { get; set; }
     }
 }

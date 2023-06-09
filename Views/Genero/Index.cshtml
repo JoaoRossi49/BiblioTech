@@ -1,7 +1,8 @@
 @model IEnumerable<BiblioTech.Models.Genero>
 
 @{
-    Layout = null;
+        ViewData["Title"] = "Genero";
+
 }
 
 <!DOCTYPE html>
@@ -9,17 +10,17 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
+    <title>Listagem de gêneros</title>
 </head>
 <body>
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Incluir novo gênero</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.DescricaoGenero)
+               Descrição do gênero
             </th>
             <th></th>
         </tr>
@@ -31,9 +32,9 @@
                 @Html.DisplayFor(modelItem => item.DescricaoGenero)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.IdAutor">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdAutor">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdAutor">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.IdGenero">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.IdGenero">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdGenero">Deletar</a>
             </td>
         </tr>
 }

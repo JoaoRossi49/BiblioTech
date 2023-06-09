@@ -1,7 +1,7 @@
 @model BiblioTech.Models.Autor
 
 @{
-    Layout = null;
+    ViewData["Title"] = "Autor";
 }
 
 <!DOCTYPE html>
@@ -9,7 +9,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Details</title>
+    <title>Detalhes do autor</title>
 </head>
 <body>
 
@@ -18,7 +18,7 @@
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.NomeAutor)
+            Nome do autor
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.NomeAutor)
@@ -26,8 +26,8 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.IdAutor">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model?.IdAutor">Editar</a> |
+    <a asp-action="Index">Voltar</a>
 </div>
 </body>
 </html>

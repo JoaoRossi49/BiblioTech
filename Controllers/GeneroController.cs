@@ -36,7 +36,7 @@ namespace BiblioTech.Controllers
             }
 
             var genero = await _context.Genero
-                .FirstOrDefaultAsync(m => m.IdAutor == id);
+                .FirstOrDefaultAsync(m => m.IdGenero == id);
             if (genero == null)
             {
                 return NotFound();
@@ -56,7 +56,7 @@ namespace BiblioTech.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("IdAutor,DescricaoGenero")] Genero genero)
+        public async Task<IActionResult> Create([Bind("IdGenero,DescricaoGenero")] Genero genero)
         {
             if (ModelState.IsValid)
             {
@@ -88,9 +88,9 @@ namespace BiblioTech.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("IdAutor,DescricaoGenero")] Genero genero)
+        public async Task<IActionResult> Edit(int id, [Bind("IdGenero,DescricaoGenero")] Genero genero)
         {
-            if (id != genero.IdAutor)
+            if (id != genero.IdGenero)
             {
                 return NotFound();
             }
@@ -104,7 +104,7 @@ namespace BiblioTech.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!GeneroExists(genero.IdAutor))
+                    if (!GeneroExists(genero.IdGenero))
                     {
                         return NotFound();
                     }
@@ -127,7 +127,7 @@ namespace BiblioTech.Controllers
             }
 
             var genero = await _context.Genero
-                .FirstOrDefaultAsync(m => m.IdAutor == id);
+                .FirstOrDefaultAsync(m => m.IdGenero == id);
             if (genero == null)
             {
                 return NotFound();
@@ -157,7 +157,7 @@ namespace BiblioTech.Controllers
 
         private bool GeneroExists(int id)
         {
-          return (_context.Genero?.Any(e => e.IdAutor == id)).GetValueOrDefault();
+          return (_context.Genero?.Any(e => e.IdGenero == id)).GetValueOrDefault();
         }
     }
 }

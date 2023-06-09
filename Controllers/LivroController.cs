@@ -21,7 +21,7 @@ namespace BiblioTech.Controllers
 
         // GET: Livro
         public async Task<IActionResult> Index()
-        {
+        {      
               return _context.Livro != null ? 
                           View(await _context.Livro.ToListAsync()) :
                           Problem("Entity set 'BibliotechContext.Livro'  is null.");
@@ -46,8 +46,11 @@ namespace BiblioTech.Controllers
         }
 
         // GET: Livro/Create
+
         public IActionResult Create()
         {
+            ViewBag.Genero = new SelectList(_context.Genero, "IdGenero", "DescricaoGenero", null);
+            ViewBag.Autor = new SelectList(_context.Autor, "IdAutor", "NomeAutor", null);
             return View();
         }
 
@@ -80,6 +83,8 @@ namespace BiblioTech.Controllers
             {
                 return NotFound();
             }
+            ViewBag.Genero = new SelectList(_context.Genero, "IdGenero", "DescricaoGenero", null);
+            ViewBag.Autor = new SelectList(_context.Autor, "IdAutor", "NomeAutor", null);
             return View(livro);
         }
 

@@ -1,7 +1,8 @@
 @model BiblioTech.Models.Autor
 
 @{
-    Layout = null;
+        ViewData["Title"] = "Autor";
+
 }
 
 <!DOCTYPE html>
@@ -9,7 +10,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Create</title>
+    <title>Incluir autor</title>
 </head>
 <body>
 
@@ -20,7 +21,7 @@
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="NomeAutor" class="control-label"></label>
+                <label asp-for="NomeAutor" class="control-label">Nome do autor</label>
                 <input asp-for="NomeAutor" class="form-control" />
                 <span asp-validation-for="NomeAutor" class="text-danger"></span>
             </div>
@@ -32,7 +33,7 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Voltar</a>
 </div>
 
 </body>

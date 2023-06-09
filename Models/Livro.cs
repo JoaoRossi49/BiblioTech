@@ -15,9 +15,14 @@ namespace BiblioTech.Models
 
         [ForeignKey("Genero")]
         public int IdGenero { get; set; }
+        public Genero Genero {get; set;}
+
         public int QuantidadePaginas { get; set; }
 
         [ForeignKey("Autor")]
         public int IdAutor {get; set;}
+        public Autor Autor {get; set;}
     }
+
+    
 }

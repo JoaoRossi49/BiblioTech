@@ -1,7 +1,7 @@
 @model IEnumerable<BiblioTech.Models.Livro>
 
 @{
-    Layout = null;
+    ViewData["Title"] = "Livro";
 }
 
 <!DOCTYPE html>
@@ -9,26 +9,26 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
+    <title>Listagem de livros</title>
 </head>
 <body>
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Incluir novo</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.NomeLivro)
+                Nome do livro
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.IdGenero)
+                Gênero
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.QuantidadePaginas)
+                Quantidade de páginas
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.IdAutor)
+                Autor
             </th>
             <th></th>
         </tr>
@@ -40,18 +40,18 @@
                 @Html.DisplayFor(modelItem => item.NomeLivro)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.IdGenero)
+                @Html.DisplayFor(modelItem => item.Genero.DescricaoGenero)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.QuantidadePaginas)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.IdAutor)
+                @Html.DisplayFor(modelItem => item.Autor.NomeAutor)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.IdLivo">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.IdLivo">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.IdLivo">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.IdLivo">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.IdLivo">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdLivo">Deletar</a>
             </td>
         </tr>
 }

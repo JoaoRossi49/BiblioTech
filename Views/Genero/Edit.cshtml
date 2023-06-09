@@ -1,7 +1,8 @@
 @model BiblioTech.Models.Genero
 
 @{
-    Layout = null;
+        ViewData["Title"] = "Genero";
+
 }
 
 <!DOCTYPE html>
@@ -9,7 +10,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Edit</title>
+    <title>Edição de genero</title>
 </head>
 <body>
 
@@ -19,9 +20,9 @@
     <div class="col-md-4">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <input type="hidden" asp-for="IdAutor" />
+            <input type="hidden" asp-for="IdGenero" />
             <div class="form-group">
-                <label asp-for="DescricaoGenero" class="control-label"></label>
+                <label asp-for="DescricaoGenero" class="control-label">Descrição do genero</label>
                 <input asp-for="DescricaoGenero" class="form-control" />
                 <span asp-validation-for="DescricaoGenero" class="text-danger"></span>
             </div>
@@ -33,7 +34,7 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Voltar</a>
 </div>
 
 </body>
