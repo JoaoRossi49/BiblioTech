@@ -1,0 +1,51 @@
+@model BiblioTech.Models.Livro
+
+@{
+    ViewData["Title"] = "Livro";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Detalhes</title>
+</head>
+<body>
+
+<div>
+    <h4>Livro</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            Nome do livro
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NomeLivro)
+        </dd>
+        <dt class = "col-sm-2">
+            Genero
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IdGenero)
+        </dd>
+        <dt class = "col-sm-2">
+            Quantidade de páginas
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.QuantidadePaginas)
+        </dd>
+        <dt class = "col-sm-2">
+            Autor
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.IdAutor)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.IdLivo">Editar</a> |
+    <a asp-action="Index">Voltar</a>
+</div>
+</body>
+</html>

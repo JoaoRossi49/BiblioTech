@@ -1,0 +1,33 @@
+@model BiblioTech.Models.Autor
+
+@{
+    ViewData["Title"] = "Autor";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Detalhes do autor</title>
+</head>
+<body>
+
+<div>
+    <h4>Autor</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            Nome do autor
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.NomeAutor)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.IdAutor">Editar</a> |
+    <a asp-action="Index">Voltar</a>
+</div>
+</body>
+</html>

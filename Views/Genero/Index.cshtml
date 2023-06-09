@@ -1,0 +1,44 @@
+@model IEnumerable<BiblioTech.Models.Genero>
+
+@{
+        ViewData["Title"] = "Genero";
+
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Listagem de gêneros</title>
+</head>
+<body>
+<p>
+    <a asp-action="Create">Incluir novo gênero</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+               Descrição do gênero
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.DescricaoGenero)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdGenero">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.IdGenero">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdGenero">Deletar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</body>
+</html>

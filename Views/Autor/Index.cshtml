@@ -1,0 +1,43 @@
+@model IEnumerable<BiblioTech.Models.Autor>
+
+@{
+    ViewData["Title"] = "Autor";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Listagem de autores</title>
+</head>
+<body>
+<p>
+    <a asp-action="Create">Incluir novo autor</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Nome do autor
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NomeAutor)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.IdAutor">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.IdAutor">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.IdAutor">Deletar</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</body>
+</html>

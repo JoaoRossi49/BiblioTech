@@ -1,7 +1,14 @@
+using BiblioTech.Data;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<BibliotechContext>(options =>
+options.UseMySQL(builder.Configuration.GetConnectionString("BibliotechContext")));
 
 var app = builder.Build();
 
@@ -22,6 +29,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Livro}/{action=Index}/{id?}");
 
 app.Run();

@@ -2,12 +2,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace BiblioTech.Models
 {
     public class Genero
     {
-        public int IdAutor { get; set; }
+        [Key]
+        public int IdGenero { get; set; }
         public String DescricaoGenero { get; set; }
     }
 }
