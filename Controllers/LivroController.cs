@@ -22,8 +22,9 @@ namespace BiblioTech.Controllers
         // GET: Livro
         public async Task<IActionResult> Index()
         {      
+            var livros = _context.Livro.Include(l => l.Genero).Include(l=>l.Autor).ToList();
               return _context.Livro != null ? 
-                          View(await _context.Livro.ToListAsync()) :
+                          View(livros) :
                           Problem("Entity set 'BibliotechContext.Livro'  is null.");
         }
 
